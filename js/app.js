@@ -1,7 +1,5 @@
 function htmlvisitante() {
-   
         location = '../visitantes.html';
-    
 } 
     
 
@@ -43,26 +41,33 @@ function htmlvisitante() {
                 console.log("Error de firebase > "+error.code);
                 console.log("Error de firebase, mensaje > "+error.message);
             });
-    }
+}
 
-  function  guardarVisitantes(){
-     let email = Email.value;
+function  guardarVisitantes(){
+    //  let email = Email.value;
      let empresas = inputState.value;
      let nombreyapellido = exampleInputNombre.value;
+     let patentes = patente.value;
+     let estacionamientos = estacionamiento.value;
+     let galpones = galpon.value;
+     let contactos = contacto.value;
+// current user para ver los datos del usuario conectado
+const currentUser = firebase.auth().currentUser;
 
- const currentUser = firebase.auth().currentUser;
- console.log(currentUser)
-    //Para tener una nueva llave en la colección messages
-    // const newMessageKey = firebase.database().ref().child('visitantes');
+//Para tener una nueva llave en la colección messages
+const newMessageKey = firebase.database().ref().child('visitantes').push().key;
 
-    firebase.database().ref('visitantes').set({
-        creator : currentUser.uid,
-        creatorName : nombreyapellido,
-        email: email,
-        empresa : empresas
-    });
+firebase.database().ref(`visitantes/${newMessageKey}`).set({
+    creator : currentUser.uid,
+    visitante : nombreyapellido,
+    empresa: empresas,
+    patente: patentes,
+    estacionamiento: estacionamientos,
+    galpon: galpones,
+    contacto: contactos
+});
 }
-  function logout(){
+function logout(){
     firebase.auth().signOut()
         .then(()=>{
             console.log("Chao");
