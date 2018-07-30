@@ -43,7 +43,20 @@ function htmlvisitante() {
             });
 }
 
-function  guardarVisitantes(){
+
+let video;
+let canvas;
+let link;
+function tomarfoto() {
+    
+}
+
+
+
+
+
+
+function  guardarResidentes(){
     //  let email = Email.value;
      let empresas = inputState.value;
      let nombreyapellido = exampleInputNombre.value;
@@ -55,9 +68,9 @@ function  guardarVisitantes(){
 const currentUser = firebase.auth().currentUser;
 
 //Para tener una nueva llave en la colección messages
-const newMessageKey = firebase.database().ref().child('visitantes').push().key;
+const newMessageKey = firebase.database().ref().child('residentes').push().key;
 
-firebase.database().ref(`visitantes/${newMessageKey}`).set({
+firebase.database().ref(`residentes/${newMessageKey}`).set({
     creator : currentUser.uid,
     visitante : nombreyapellido,
     empresa: empresas,
@@ -66,7 +79,9 @@ firebase.database().ref(`visitantes/${newMessageKey}`).set({
     galpon: galpones,
     contacto: contactos
 });
+
 }
+
 function logout(){
     firebase.auth().signOut()
         .then(()=>{
