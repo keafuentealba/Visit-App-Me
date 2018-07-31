@@ -5,30 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Visit App Me</title>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-12">
+  <nav class="navbar navbar-dark bg-dark">
+    <img src="img/LOGO_If.png" alt="">
+    <i class="fas fa-home"></i>
+  </nav>
+  <div class="container formularioResidentes">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-6 col-12">
         <div class="form-group">
           <label for="exampleInputNombre">Nombre y apellido</label>
           <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="emailHelp" placeholder="nombre y apellido">
         </div>
         <div class="form-group">
-          <label for="galpon">Galpon</label>
-          <input type="text" class="form-control" id="galpon" aria-describedby="emailHelp" placeholder="galpon">
-        </div>
-        <div class="form-group">
           <label for="patente">Patente</label>
-          <input type="text" class="form-control" id="patente" aria-describedby="emailHelp" placeholder="patente">
-          <label for="estacionamiento">Estacionamiento</label>
-          <input type="text" class="form-control" id="estacionamiento" aria-describedby="emailHelp" placeholder="estacionamiento">
+          <input type="text" class="form-control" id="patente" aria-describedby="emailHelp" placeholder="">
         </div>
         <div class="form-group">
-          <label for="inputState">Empresas</label>
+            <label for="estacionamiento">Estacionamiento</label>
+            <input type="text" class="form-control" id="estacionamiento" aria-describedby="emailHelp" placeholder="">
+          </div>
+        <div class="form-group">
+          <label for="inputState">Galpon</label>
           <select id="inputState" class="form-control">
             <option selected>Laboratoria</option>
             <option>Fundacion Mustakis</option>
@@ -47,7 +50,7 @@
         </div>
         
       <div class="form-group">
-      <button type="button" class="btn btn-primary" data-toggle="modal" onclick="tomarfoto()" data-target="#modal3">
+      <button type="button" class="btn btn-dark" data-toggle="modal" onclick="tomarfoto()" data-target="#modal3">
         Tomar Foto
       </button>
       </div>
@@ -57,7 +60,7 @@
           <label for="contacto">Contacto</label>
           <input type="email" class="form-control" id="contacto" aria-describedby="emailHelp" placeholder="Enter email">
         </div>
-        <button  class="btn btn-primary" onclick="guardarResidentes()">Guardar</button>
+        <button  class="btn btn-orange" onclick="guardarResidentes()">Guardar</button>
 
       </div>
     </div>
@@ -74,7 +77,7 @@
         <div class="modal-body">
           <div id="camara">
             <!-- el tamaño debe ser en html, si se hace en css no proporciona el centro del canvas -->
-            <canvas id="canvas" width="600" height="700"></canvas>
+            <canvas id="canvas" width="600" height="473"></canvas>
             <button id="snap" class="text-center"></button>
         </div>
         <video src="" id="video"></video>

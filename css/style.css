@@ -20,7 +20,7 @@ background-position: right;
 H3{
     color: #ffffff;
     font-family:  'Rubik', sans-serif;
-
+}
 #camara {
     display: inline-block;
     position: relative;
@@ -35,11 +35,11 @@ H3{
     border: solid 2px white;
     background-color: rgba(255, 0, 0, 0.651);
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     bottom: 0px;
-    margin-bottom: 176px;
+    margin-bottom: 3px;
     margin-left: 13em;
 }
 #canvas{
@@ -53,4 +53,17 @@ H3{
     flex: 1 1 auto;
     padding: 0;
 
+}
+#contendorResidentes{
+    display: -webkit-box;
+
+}
+.fa-home{
+    color: #FFFFFF;
+}
+.btn-orange{
+    background-color: #F96C28;
+}
+.formularioResidentes{
+    margin-top: 5%;
 }
