@@ -1,0 +1,23 @@
+body{
+background-image: url('../img/foto.jpg');
+background-position: right;
+    background-position-y: unset;
+    height: -webkit-fill-available !important; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.if{
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    border-color: black;
+
+    
+}
+
+
+H3{
+    color: #ffffff;
+}
