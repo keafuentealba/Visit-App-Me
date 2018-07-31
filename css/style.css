@@ -1,4 +1,4 @@
-body{
+#fondoLogin{
 background-image: url('../img/foto.jpg');
 background-position: right;
     background-position-y: unset;
@@ -14,10 +14,9 @@ background-position: right;
     background-color: black;
     border-color: black;
 
-    
 }
-
 
 H3{
     color: #ffffff;
+    font-family:  'Rubik', sans-serif;
 }
