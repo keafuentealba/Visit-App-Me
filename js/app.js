@@ -4,8 +4,9 @@ window.onload = () => {
         .on('child_added', (residentes)=>{ //Para escuchar datos más veces o doblegados
             let contenedor = document.getElementById('contendorResidentes');
             contenedor.innerHTML += `
+            
                 <p>${residentes.val().visitante}</p>
-                <img style="width: 200px" src="${residentes.val().imgurl}">
+                <img style="width: 200px; border-radius: 22%" src="${residentes.val().imgurl}">
                 </img>
             `;
         });
