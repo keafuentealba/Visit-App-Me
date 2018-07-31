@@ -1,0 +1,60 @@
+
+#fondoLogin{
+background-image: url('../img/foto.jpg');
+background-position: right;
+    background-position-y: unset;
+    height: -webkit-fill-available !important; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.if{
+    position: relative;
+    display: inline-block;
+    background-color: black;
+    border-color: black;
+
+}
+
+H3{
+    color: #ffffff;
+    font-family:  'Rubik', sans-serif;
+}
+#camara {
+    display: inline-block;
+    position: relative;
+}
+
+#video {
+    display: none;
+}
+
+#snap {
+    border-radius: 50%;
+    border: solid 2px white;
+    background-color: rgba(255, 0, 0, 0.651);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    bottom: 0px;
+    margin-bottom: 3px;
+    margin-left: 13em;
+}
+#canvas{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0;
+
+}
+#contendorResidentes{
+    display: -webkit-box;
+
+}
