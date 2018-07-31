@@ -9,27 +9,26 @@
     <title>Visit App Me</title>
 </head>
 <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-12">
-            <h3>Login</h3>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <p>Si no tienes cuenta, <a href="">Registrate</a></p>
-            </div>
-            <button  class="btn btn-primary" onclick="login()">Inica Sesion</button>
+  <div  id="visita" class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-12">
+        <div class="form-group">
+          <label for="exampleInputNombre">Nombre y apellido</label>
+          <input type="text" class="form-control" id="exampleInputNombre" aria-describedby="emailHelp" placeholder="nombre y apellido">
         </div>
-      </div>
-    </div>
-    
+        <div class="form-group">
+          <label for="galpon">Galpon</label>
+          <input type="text" class="form-control" id="galVisit" aria-describedby="emailHelp" placeholder="galpon">
+        </div>
+        <div class="form-group">
+          <div class="col-6 ">
+            <label for="patente">Patente</label>
+            <input type="text" class="form-control" id="patVisit" aria-describedby="emailHelp" placeholder="patente">
+            <label for="estacionamiento">Estacionamiento</label>
+            <input type="text" class="form-control" id="estVisit" aria-describedby="emailHelp" placeholder="estacionamiento">
+          </div>
+        </div>
+
 <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 <script>
   // Initialize Firebase
