@@ -1,3 +1,4 @@
+
 #fondoLogin{
 background-image: url('../img/foto.jpg');
 background-position: right;
@@ -20,29 +21,49 @@ H3{
     color: #ffffff;
     font-family:  'Rubik', sans-serif;
 }
-
-
-/* opciones */
-.menu{
-    color: #000000;
-}
- 
-.justify-content-center{
-    position: relative;
-    background-color: #000000;
-    margin-bottom: 15px;
-}
-
-.fa-home{
+#camara {
     display: inline-block;
-    color: #ffffff;
-    padding-left: 70%;
-    
+    position: relative;
+}
 
+#video {
+    display: none;
+}
 
-     
+#snap {
+    border-radius: 50%;
+    border: solid 2px white;
+    background-color: rgba(255, 0, 0, 0.651);
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    bottom: 0px;
+    margin-bottom: 3px;
+    margin-left: 13em;
+}
+#canvas{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0;
 
-  
-   
+}
+#contendorResidentes{
+    display: -webkit-box;
 
+}
+.fa-home{
+    color: #FFFFFF;
+}
+.btn-orange{
+    background-color: #F96C28;
+}
+.formularioResidentes{
+    margin-top: 5%;
 }
