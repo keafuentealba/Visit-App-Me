@@ -12,7 +12,7 @@ Enlace hacia las entrevistas https://drive.google.com/drive/folders/1PHi5kqWeAK8
 # prototipos
 
 
-# Despliegue en la web  
+# Despliegue en la web https://keafuentealba.github.io/Visit-App-Me/login.html 
 
 # Planificación
  
