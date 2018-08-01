@@ -13,39 +13,19 @@
   <div  id="visita" class="container">
     <div class="row">
       <div class="col-sm-12 col-md-6 col-12">
-        <div class="form-group">
-          <label for="exampleInputNombre">Nombre y apellido</label>
-          <input type="text" class="form-control" id="nomVisit" placeholder="nombre y apellido">
-        </div>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Empresa</th>
+      <th scope="col">Patente</th>
+      <th scope="col">Estacionamiento</th>
+    </tr>
+  </thead>
+  <tbody id="visitData">
 
-        <div class="form-group">
-          <label for="galpon">Galpon</label>
-          <select id="galpVisit" class="form-control">
-            <option value="Laboratoria">Laboratoria</option>
-            <option value="Fundacion Mustakis">Fundacion Mustakis</option>
-            <option value="AguasLab ">AguasLab </option>
-            <option value="Elestudio">lestudio</option>
-            <option value="Robotics Labs">Robotics Labs</option>
-            <option value="Fábrica de medio">Fábrica de medio</option>
-            <option value="Café altura">Café altura</option>
-            <option value="Destileria Husares">Destileria Husares</option>
-            <option value="Fundacion Mustakis">Fundacion Mustakis</option>
-            <option value="Wildproyectchile ">Wildproyectchile </option>
-            <option value="Deseis">Deseis</option>
-            <option value="cdi">cdi</option>
-            <option value="Tremenda">Tremenda</option>
-            <option value="Ilegal">Ilegal</option>
-          </select>
-      </div>
-        <div class="form-group">
-          <div class="col-6 ">
-            <label for="patente">Patente</label>
-            <input type="text" class="form-control" id="patVisit" aria-describedby="emailHelp" placeholder="patente">
-            <label for="estacionamiento">Estacionamiento</label>
-            <input type="text" class="form-control" id="estVisit" aria-describedby="emailHelp" placeholder="estacionamiento">
-          </div>
-        </div>
-        <button type="button" class="btn btn-success" onClick="addVisit()">Ingresar</button>
+  </tbody>
+</table>
 
 <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 <script>
@@ -64,6 +44,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://smtpjs.com/v2/smtp.js"></script>
+
 <script src="js/app.js"></script>
 </body>
 </html>
