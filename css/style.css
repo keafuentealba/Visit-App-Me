@@ -20,3 +20,29 @@ H3{
     color: #ffffff;
     font-family:  'Rubik', sans-serif;
 }
+
+
+/* opciones */
+.menu{
+    color: #000000;
+}
+ 
+.justify-content-center{
+    position: relative;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+.fa-home{
+    display: inline-block;
+    color: #ffffff;
+    padding-left: 70%;
+    
+
+
+     
+
+  
+   
+
+}
