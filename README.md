@@ -10,11 +10,13 @@ Realizando las entrevistas a distintas personas que trabajan en IF Blanco, pudim
 Enlace hacia las (entrevistas)https://drive.google.com/drive/folders/1PHi5kqWeAK8HsD16zEbJTmHnlL2nhKfm?usp=sharing
 
 # prototipos
+https://www.figma.com/file/GpmfiLmoNbb1m7jqF0zDSU87/Untitled?node-id=0%3A1
 
 
 # Despliegue en la web  
 https://keafuentealba.github.io/Visit-App-Me/login.html
 
 # Planificación
+
 
  
