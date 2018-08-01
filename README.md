@@ -7,12 +7,16 @@ Como proyecto final del common core, se implementará un sistema de registros pa
 # Entrevistas y Documentación
 Realizando las entrevistas a distintas personas que trabajan en IF Blanco, pudimos concretar y empezar a planificar en base a sus respuestas.
 
-Enlace hacia las entrevistas https://drive.google.com/drive/folders/1PHi5kqWeAK8HsD16zEbJTmHnlL2nhKfm?usp=sharing
+Enlace hacia las (entrevistas)https://drive.google.com/drive/folders/1PHi5kqWeAK8HsD16zEbJTmHnlL2nhKfm?usp=sharing
 
 # prototipos
+https://www.figma.com/file/GpmfiLmoNbb1m7jqF0zDSU87/Untitled?node-id=0%3A1
 
 
-# Despliegue en la web https://keafuentealba.github.io/Visit-App-Me/login.html 
+# Despliegue en la web  
+https://keafuentealba.github.io/Visit-App-Me/login.html
 
 # Planificación
+
+
  
