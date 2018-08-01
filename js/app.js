@@ -4,7 +4,7 @@ window.onload = () => {
         .on('child_added', (residentes)=>{ //Para escuchar datos más veces o doblegados
             let contenedor = document.getElementById('contendorResidentes');
             contenedor.innerHTML += `
-            
+
                 <p>${residentes.val().visitante}</p>
                 <img style="width: 200px; border-radius: 22%" src="${residentes.val().imgurl}">
                 </img>
@@ -58,13 +58,13 @@ function htmlresidentes() {
       });
 }
 function logout(){
-    
+
   firebase.auth().signOut()
     .then(()=>{
     location = '../login.html';
       })
     .catch();
-    
+
 }
 
 
@@ -102,17 +102,12 @@ function tomarfoto() {
             })
         }, function(e) {
             console.log(e);
-           
+
         })
     }else{
         alert(' tu navegador debe ser muy antiguo')
     }
 }
-
-
-
-
-
 
 function  guardarResidentes(){
     //  let email = Email.value;
@@ -142,3 +137,33 @@ firebase.database().ref(`residentes/${newMessageKey}`).set({
 
 }
 
+window.addVisit = () => {
+  console.log('adasda');
+  let nombre = document.getElementById('nomVisit').value;
+  let empresa = document.getElementById('galpVisit').value;
+  let estacionamiento = document.getElementById('estVisit').value;
+  let patente = document.getElementById('patVisit').value;
+
+  const currentUser = firebase.auth().currentUser;
+  let newVisitKey = firebase.database().ref().child('visitantes').push().key;
+  firebase.database().ref(`visitantes/${newVisitKey}`).set({
+    creator: currentUser.uid,
+    nombre: nombre,
+    empresa: empresa,
+    estacionamiento: estacionamiento,
+    patente: patente
+  })
+
+}
+
+window.loadVisitData = () => {
+  firebase.database().ref(`visitantes`).once('value', (visitante) => {
+
+      console.log(visitante.val())
+      document.getElementById('visitData').innerHTML += '<tr>'+
+        '<td>'+visitantes.nombre+'</td>'+
+        '<td>Mark</td><td>Otto</td><td>@mdo</td></tr>'
+    });
+
+  //document.getElementById('visitData').innerHTML = '<tr><th scope="row">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr>';
+};
